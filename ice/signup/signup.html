@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+        }
+
+        #formContainer {
+            margin: auto;
+            width: 400px;
+            background-color: white;
+            height: 600px;
+            border:  7px solid darkblue;
+            border-radius: 15px;
+            display: grid;
+            grid-template-rows: 20fr 1fr 1fr;
+        }
+
+        #banner
+        {
+            background-image: url(images/jesus_feeds_5000.jpeg);
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px black;
+            text-align: center;
+
+        }
+
+        #scriptureimgs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 6px;
+        }
+
+        .scriptureimg {
+            width: 70px;
+
+        }
+
+        #closeBtn {
+            position: absolute;
+            top: 15px;
+        }
+
+        h3 {
+            align-self: center;
+            margin: auto;
+        }
+
+        #myForm {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: .5fr 1fr;
+            justify-content: center;
+            margin: 30px;
+            gap: 20px;
+        }
+
+        .checkboxes {
+            grid-column: 1 / 3;
+            justify-self: center;
+        }
+
+        #submitBtn {
+            justify-self: center;
+            grid-column: 1 / 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="formContainer">
+    <div id="banner">
+        <h1 class="bannertext">Daily Feed</h1>
+        <h2 class="bannertext">Scripture A Day</h2>
+    </div>
+         <h3>Sign Up for Daily Scripture Feed</h3>
+        <form id="myForm">
+            <button type="button" id="closeBtn">X</button>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Gender:</label>
+            <div id="genderTag">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section class="checkboxes">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section class="checkboxes">
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section id="submitBtn">
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+       
+        <div id="scriptureimgs">
+            <a><img src="images/old_testament.webp" alt="Old Testament" class="scriptureimg"></a>
+            <a><img src="images/new_testament.webp" alt="New testament" class="scriptureimg"></a>
+            <a><img src="images/book_of_mormon.webp" alt="Book Of Mormon" class="scriptureimg"></a>
+            <a><img src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenents" class="scriptureimg"></a>
+            <a><img src="images/pearl_of_great_price.webp" alt="Pearl of Great Price" class="scriptureimg"></a>
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>

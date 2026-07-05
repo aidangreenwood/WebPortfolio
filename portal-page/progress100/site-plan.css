@@ -1,0 +1,31 @@
+/* Planning for Portal Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+header {
+    background-color: #C98BB9;
+}
+
+body {
+    background-color: #FAE3E3;
+}
+
+.card {
+    background-color: #F7D4BC;
+}
+
+h1 {
+    color: #0E1C36;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h2 {  /* For card headers */
+    color: #773344;
+    font-family: "Lora", serif;
+}
+
+ul p {
+    color: #051014;
+    font-family: "Work Sans", sans-serif;
+}

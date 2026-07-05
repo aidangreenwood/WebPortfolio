@@ -1,0 +1,59 @@
+/* Add your CSS here to style the photography portfolio*/
+
+/* Go here to get fonts: https://fonts.google.com/*/
+/* Select a font, and copy it's @import statement. Paste at the top of this file.*/
+
+/* Flexbox cheat sheet: https://flexbox.malven.co/*/
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Trykker&display=swap');
+
+h1 {
+ font-family: Trykker;
+ text-align: center;
+ font-size: 3em;
+ margin-bottom: 2px;
+}
+
+h2 {
+    font-family: "Cherry Swash";
+    text-align: center;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Cherry Swash";
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    align-items:flex-start;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color:gold;
+    padding: 25px 0 40px 0;
+    font-size: larger;
+    
+}
+
+nav a:hover {
+    font-weight: bolder;
+    color: aqua;
+}
+
+img {
+    max-width: 250px;
+    border: 4px solid pink;
+    border-radius: 5px;
+}
+
+#img-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-height: 1500px;
+    align-content: center;
+}
