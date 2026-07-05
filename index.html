@@ -3,97 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Page</title>
-    <link rel="stylesheet" href="portal-page/progress200/style.css">
+    <title>Portfolio Portal Page</title>
+    <link rel="stylesheet" href="WDD130/portal-page/progress200/style.css">
     <style>
-        
-.card-container h2:hover {
-    font-size: 30px;
-}
+        .card {
+            display: grid;
+        }
+
+        h3 {
+            margin: auto;
+        }
+
+        h2 {
+            justify-self: center;
+        }
     </style>
+
 </head>
 <body>
 
     <header>
-        <img id="logo" src="portal-page/progress100/LogoForPortal.png" alt="Portal Logo">
-        <h1>Portal Page for Aidan Greenwood</h1>
+        <img id="logo" src="WDD130/portal-page/progress100/LogoForPortal.png" alt="Portal Logo">
+        <h1>Portfolio Portal Page</h1>
         <nav>
             <ul>
-                <li><a id="homelink" href="index.html">Home</a></li>
-                <li><a id="siteplanlink" href="portal-page/progress300/site-plan.html" target="_blank">Site Plan</a></li>
-                <li><a id="aboutmelink" href="portal-page/progress300/about-me.html" target="_blank">About Me</a></li>
+                <li><a id="homelink" href="#">Home</a></li>
+                <li><a id="siteplanlink" href="WDD130/portal-page/progress300/site-plan.html" target="_blank">Site Plan</a></li>
+                <li><a id="aboutmelink" href="WDD130/portal-page/progress300/about-me.html" target="_blank">About Me</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="card-container">
-       <div id="ice-card" class="card">
-            <a class="link" href="portal-page/progress300/ice.html" target="_blank">
-                <h2>ICE</h2>
-            </a> 
-            <p>
-            ICE assignments, or In Class Exercise assignments, are a core part of the WDD130 class design.
-            </p>
-        </div>
-
-        <div id="wwr-card" class="card">
-            <a class="link" href="wwr/index.html" target="_blank">
-                <h2>WRR</h2>
+        
+        <div class="card" id="wdd130-card">
+            <a class="link" id="wdd-link" href="WDD130/portal-page/progress400/WDD.html">
+                <h2>WDD130 Page</h2>
             </a>
-            <p>
-                WWR, or White Water Rafting, was the first major assignment in WDD130.
+            <h3>| HTML, CSS |</h3>
+            <p></p>
+                This class held the fundimentals of web design, and allowed me to create and host
+                this page.
             </p>
         </div>
 
-        <div id="FinalP" class="card">
-            <a class="link" href="client_report.html" target="balnk">
-                <h2>Client Report</h2>
+        <div class="card" id="CSE130_card">
+            <a class="link" id="cse130-link" href="WDD130/portal-page/progress400/PY-projects.html">
+                <h2>CSE130 Page</h2>
             </a>
+            <h3>| Python |</h3>
             <p>
-                This is the final project for the class. Assigned by a teammate, we were
-                tasked with making their idea of a cool website.
+                This class focused on solving nontrivial problems. In the class 
+                we learned about many tools that help plan solving these problems and
+                once planned, write the actual code and use serveral varification
+                methods to assure quality.
             </p>
         </div>
-
-        <table id="maintable">
-            <tr>
-                <th>#</th>
-                <th>ABC</th>
-                <th>F</th>
-            </tr>
-            <tr>
-                <td>A</td>
-                <td>000</td>
-                <td>1</td>
-            </tr>
-
-        </table>
-
-        <div id="formBox">
-            <form>
-                <label for="msg">Send Me A Message:</label>
-                <input type="text" id="msg" name="msg">
-                <button id="submitBtn" type="submit">Submit</button>
-            </form>
-        </div> 
 
     </main>
 
     <footer>
         <p>2026 - Aidan Greenwood</p>
-        <p><a class="footer-link" href="portal-page/progress300/site-plan.html" target="_blank">Site Plan</a></p>
-        <p><a class="footer-link" href="portal-page/progress300/contact.html" target="_blank">Contact</a></p>
+        <p><a class="footer-link" href="WDD130/portal-page/progress300/site-plan.html" target="_blank">Site Plan</a></p>
+        <p><a class="footer-link" href="WDD130/portal-page/progress300/contact.html" target="_blank">Contact</a></p>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
-                <img class="social-img" src="portal-page/images/facebook-logo.png" alt="fb icon">
+                <img class="social-img" src="WDD130/portal-page/images/facebook-logo.png" alt="fb icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img class="social-img" src="portal-page/images/X-logo.png.webp" alt="twitter icon">
+                <img class="social-img" src="WDD130/portal-page/images/X-logo.png.webp" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img class="social-img" src="portal-page/images/Instagram-Logo.png" alt="instagram icon">
+                <img class="social-img" src="WDD130/portal-page/images/Instagram-Logo.png" alt="instagram icon">
             </a>
-            </div>
+        </div>
     </footer>
    
 </body>

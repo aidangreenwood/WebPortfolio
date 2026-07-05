@@ -39,6 +39,11 @@ h2 {  /* For card headers */
     font-size: 28px;
 }
 
+h3 {
+    color: #773344;
+    font-family: "Lora", serif;
+}
+
 ul, p, li, label {
     color: #051014;
     font-family: "Work Sans", sans-serif;
