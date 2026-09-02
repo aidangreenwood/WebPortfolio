@@ -1,3 +1,12 @@
+"""
+Aidan Greenwood
+
+This code is a cookie clicker game, but way worse.
+The point of this code was really to learn how to 
+use new features in python, and to do somthing kind of
+cool in the process.
+"""
+
 #---------------
 # Imports
 #---------------
