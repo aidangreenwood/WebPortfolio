@@ -1,6 +1,20 @@
+"""
+Author: Aidan Greenwood
+
+Note: This was developed back when I was on my laptop, and had 
+an emoji keyboard.
+
+Purpose: To solve any given wordle using elimination.
+My original intention was to try making it both a solver
+and a game, but that was too much work for me, who didn't
+know how to code yet, so there are reminnets of that original
+idea, but many are unfunctional. I plan on remaking this.
+"""
+
 import random
 import string
 from collections import Counter
+from pathlib import Path
 
 
 class WordleGame:
@@ -149,6 +163,6 @@ def load_word_list(file_path):
         return sorted([line.strip() for line in file.readlines()])  # Sort words alphabetically
 
 
-word_list = load_word_list('C:/Users/acesp/OneDrive/Documents/PythonProjects/MiscProjects/Wordle/sgb-words.txt')
+word_list = load_word_list('WebPortfolio/MiscProjects/Wordle/sgb-words.txt')
 game = WordleGame(word_list)
 game.play_game()
