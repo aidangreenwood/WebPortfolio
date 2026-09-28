@@ -80,9 +80,10 @@ def buying(upgrade):
             upgrade["level"] += 1
             
             update_display()
+            show_message("Upgrade Purchased!")
 
     else:
-        print("Not enough clicks.")
+        show_message("Not enough clicks.")
 
 
 # This function adds to the total clicks
@@ -158,6 +159,16 @@ def shrink_game():
         relwidth=0.6,
         relheight=1
     )
+
+
+def show_message(message):
+    message_label.config(text=message)
+    window.after(2000, clear_message)
+
+
+def clear_message():
+    message_label.config(text="")
+
 #--------------
 # Main Window
 #--------------
@@ -377,6 +388,16 @@ upgrade2_button = tk.Button(
 )
 upgrade2_button.grid(
     row=2,
+    column=1
+)
+
+message_label = tk.Label(
+    upgrade_frame,
+    text="",
+    bg="lightblue"
+)
+message_label.grid(
+    row=3,
     column=1
 )
 
