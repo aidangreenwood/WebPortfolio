@@ -1,0 +1,158 @@
+{
+    "cards": [
+        {
+            "name": "Geezard",
+            "top": 1,
+            "right": 4,
+            "bottom": 1,
+            "left": 5,
+            "element": null,
+            "image_path": "geezard.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "screws",
+                "quantity": 5
+            }
+        },
+        {
+            "name": "Funguar",
+            "top": 5,
+            "right": 1,
+            "bottom": 1,
+            "left": 3,
+            "element": null,
+            "image_path": "funguar.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "M-Stone Piece",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Bite Bug",
+            "top": 1,
+            "right": 3,
+            "bottom": 3,
+            "left": 5,
+            "element": null,
+            "image_path": "bite_bug.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "M-Stone Piece",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Red Bat",
+            "top": 6,
+            "right": 1,
+            "bottom": 1,
+            "left": 2,
+            "element": null,
+            "image_path": "red_bat.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Vampire Fang",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Blobra",
+            "top": 2,
+            "right": 3,
+            "bottom": 1,
+            "left": 5,
+            "element": null,
+            "image_path": "blobra.png",
+            "mod_result": {
+                "requirement": 4,
+                "item": "Rune Amulet",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Gayla",
+            "top": 2,
+            "right": 1,
+            "bottom": 4,
+            "left": 4,
+            "element": "lightning",
+            "image_path": "gayla.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Mystery Fluid",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Gesper",
+            "top": 1,
+            "right": 5,
+            "bottom": 4,
+            "left": 1,
+            "element": null,
+            "image_path": "gesper.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Black Hole",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Fastitocalon-F",
+            "top": 3,
+            "right": 5,
+            "bottom": 2,
+            "left": 1,
+            "element": "rock",
+            "image_path": "fastitocalon_f.png",
+            "mod_result": {
+                "requirement": 5,
+                "item": "Water Crystal",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Blood Soul",
+            "top": 2,
+            "right": 1,
+            "bottom": 6,
+            "left": 1,
+            "element": null,
+            "image_path": "blood_soul.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Zombie Powder",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Caterchipillar",
+            "top": 4,
+            "right": 2,
+            "bottom": 4,
+            "left": 3,
+            "element": null,
+            "image_path": "caterchipillar.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Spider Web",
+                "quantity": 1
+            }
+        },
+        {
+            "name": "Cockatrice",
+            "top": 2,
+            "right": 1,
+            "bottom": 2,
+            "left": 6,
+            "element": "lightning",
+            "image_path": "cockatrice.png",
+            "mod_result": {
+                "requirement": 1,
+                "item": "Cockatrice Pinion",
+                "quantity": 1
+            }
+        }
+    ]
+}
