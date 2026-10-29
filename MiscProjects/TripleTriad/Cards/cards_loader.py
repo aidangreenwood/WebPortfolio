@@ -6,7 +6,7 @@ defined in card.py.
 
 import json
 from pathlib import Path
-from card import Card
+from .card import Card
 
 current_folder = Path(__file__).parent
 card_data_path = current_folder / "card_data.json"

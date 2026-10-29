@@ -12,3 +12,4 @@ class Card:
         self.element = element
         self.image_path = image_path
         self.mod_result = mod_result
+        self.owner = None
